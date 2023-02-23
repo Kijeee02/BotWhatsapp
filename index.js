@@ -24,8 +24,8 @@ client.on('message', async msg => {
     const text = msg.body.toLowerCase() || '';
 
     //check status
-    if (text === '!ping') {
-        msg.reply('pong');
+    if (text === '!ki') {
+        msg.reply('oy');
     }
 
     // #edit_bg/bg_color
@@ -33,7 +33,7 @@ client.on('message', async msg => {
         await EditPhotoHandler(text, msg);
     }
     // #ask/question?
-    if (text.includes("#ask/")) {
+    if (text.includes("#kinanyadong/")) {
         await ChatAIHandler(text, msg);
     }
 
